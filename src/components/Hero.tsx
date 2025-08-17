@@ -31,7 +31,7 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-tight">
                 Crafting
                 <span className="text-gradient block">Excellence</span>
-                in Woods
+                in Wood
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
                 Transform your spaces with our premium plywood, exquisite
