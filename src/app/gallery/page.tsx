@@ -24,74 +24,74 @@ const GalleryPage = () => {
     {
       id: 1,
       category: "plywood",
-      image: "/images/_PNP1886.JPG",
+      image: "/marketing-images/_PNP1886.JPG",
     },
     {
       id: 2,
       category: "laminates",
-      image: "/images/_PNP1870.JPG",
+      image: "/marketing-images/_PNP1870.JPG",
     },
     {
       id: 3,
       category: "interiors",
-      image: "/images/_PNP1934.JPG",
+      image: "/marketing-images/_PNP1934.JPG",
     },
     {
       id: 4,
       category: "plywood",
-      image: "/images/_PNP1804.JPG",
+      image: "/marketing-images/_PNP1804.JPG",
     },
     {
       id: 5,
       category: "laminates",
-      image: "/images/_PNP1784.JPG",
+      image: "/marketing-images/_PNP1784.JPG",
     },
     {
       id: 6,
       category: "interiors",
-      image: "/images/_PNP1836.JPG",
+      image: "/marketing-images/_PNP1836.JPG",
     },
     {
       id: 7,
       category: "other",
-      image: "/images/_PNP1917.JPG",
+      image: "/marketing-images/_PNP1917.JPG",
     },
     {
       id: 8,
       category: "plywood",
-      image: "/images/_PNP1893.JPG",
+      image: "/marketing-images/_PNP1893.JPG",
     },
     {
       id: 9,
       category: "laminates",
-      image: "/images/_PNP1777.JPG",
+      image: "/marketing-images/_PNP1777.JPG",
     },
     {
       id: 10,
       category: "interiors",
-      image: "/images/_PNP1798.JPG",
+      image: "/marketing-images/_PNP1798.JPG",
     },
     {
       id: 11,
       category: "other",
-      image: "/images/_PNP1897.JPG",
+      image: "/marketing-images/_PNP1897.JPG",
     },
     {
       id: 12,
       category: "plywood",
-      image: "/images/_PNP1844.JPG",
+      image: "/marketing-images/_PNP1844.JPG",
     },
     {
       id: 13,
       category: "laminates",
-      image: "/images/_PNP1822.JPG",
+      image: "/marketing-images/_PNP1822.JPG",
     },
   ];
 
   const videos = [
     {
       id: 1,
-      src: "/videos/01.mp4",
+      src: "/marketing-images/01.mp4",
     }
   ];
 
@@ -222,7 +222,7 @@ const GalleryPage = () => {
                       }`}
                     >
                       <img
-                        src={project.image}
+                        src={process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL + project.image}
                         alt={`${project.category} project`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
                       />
@@ -253,7 +253,7 @@ const GalleryPage = () => {
                   >
                     <div className="relative aspect-video">
                       <video
-                        src={video.src}
+                        src={process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL + video.src}
                         className="w-full h-full object-cover rounded-t-2xl"
                         autoPlay
                         muted
