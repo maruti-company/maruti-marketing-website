@@ -322,18 +322,6 @@ const GalleryPage = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
                     </div>
-
-                    <div
-                      className={`p-6 ${viewMode === "list" ? "md:w-1/2 flex flex-col justify-center" : ""}`}
-                    >
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-center">
-                          <span className="px-4 py-2 bg-gradient-hero text-primary-foreground text-sm rounded-full capitalize font-semibold shadow-md">
-                            {project.category}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 ))}
               </div>
