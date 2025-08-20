@@ -14,78 +14,172 @@ const GalleryPage = () => {
 
   const categories = [
     "all",
-    "plywood",
-    "laminates",
-    "interiors",
-    "other",
+    "Interior Products",
+    "Hardware",
+    "Ply & Veneer",
+    "Other",
+    "Wood",
   ];
 
   const projects = [
     {
       id: 1,
-      category: "plywood",
-      image: "/marketing-images/_PNP1886.JPG",
+      category: "Interior Products",
+      image: "/marketing-images/FUR08.JPG",
     },
     {
       id: 2,
-      category: "laminates",
-      image: "/marketing-images/_PNP1870.JPG",
+      category: "Interior Products",
+      image: "/marketing-images/FUR01.JPG",
     },
     {
       id: 3,
-      category: "interiors",
-      image: "/marketing-images/_PNP1934.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD04.JPG",
     },
     {
       id: 4,
-      category: "plywood",
-      image: "/marketing-images/_PNP1804.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD09.JPG",
     },
     {
       id: 5,
-      category: "laminates",
-      image: "/marketing-images/_PNP1784.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD11.JPG",
     },
     {
       id: 6,
-      category: "interiors",
-      image: "/marketing-images/_PNP1836.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD16.JPG",
     },
     {
       id: 7,
-      category: "other",
-      image: "/marketing-images/_PNP1917.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD18.JPG",
     },
     {
       id: 8,
-      category: "plywood",
-      image: "/marketing-images/_PNP1893.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD21.JPG",
     },
     {
       id: 9,
-      category: "laminates",
-      image: "/marketing-images/_PNP1777.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD22.JPG",
     },
     {
       id: 10,
-      category: "interiors",
-      image: "/marketing-images/_PNP1798.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD26.JPG",
     },
     {
       id: 11,
-      category: "other",
-      image: "/marketing-images/_PNP1897.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD36.JPG",
     },
     {
       id: 12,
-      category: "plywood",
-      image: "/marketing-images/_PNP1844.JPG",
+      category: "Hardware",
+      image: "/marketing-images/HARD37.JPG",
     },
     {
       id: 13,
-      category: "laminates",
-      image: "/marketing-images/_PNP1822.JPG",
+      category: "Interior Products",
+      image: "/marketing-images/INTE04.JPG",
     },
+    {
+      id: 14,
+      category: "Interior Products",
+      image: "/marketing-images/INTE06.JPG",
+    },
+    
+    {
+      id: 15,
+      category: "Interior Products",
+      image: "/marketing-images/INTE07.JPG",
+    },
+    
+    {
+      id: 16,
+      category: "Interior Products",
+      image: "/marketing-images/INTE10.JPG",
+    },
+    {
+      id: 17,
+      category: "Interior Products",
+      image: "/marketing-images/INTE15.JPG",
+    },
+    {
+      id: 18,
+      category: "Interior Products",
+      image: "/marketing-images/INTE17.JPG",
+    },
+    {
+      id: 19,
+      category: "Other",
+      image: "/marketing-images/OFFICE03.JPG",
+    },
+    {
+      id: 20,
+      category: "Ply & Veneer",
+      image: "/marketing-images/PLY01.JPG",
+    },
+    {
+      id: 21,
+      category: "Ply & Veneer",
+      image: "/marketing-images/PLY03.JPG",
+    },
+    {
+      id: 22,
+      category: "Ply & Veneer",
+      image: "/marketing-images/ply07.jpg",
+    },
+    {
+      id: 23,
+      category: "Other",
+      image: "/marketing-images/SHOP01.JPG",
+    },
+    {
+      id: 24,
+      category: "Other",
+      image: "/marketing-images/SHOP02.JPG",
+    },
+    {
+      id: 25,
+      category: "Other",
+      image: "/marketing-images/SJR30.JPG",
+    },
+    {
+      id: 26,
+      category: "Wood",
+      image: "/marketing-images/syp-wood-timber-plank-1000x1000.jpg",
+    },
+    {
+      id: 27,
+      category: "Ply & Veneer",
+      image: "/marketing-images/VENEER01.JPG",
+    },
+    {
+      id: 28,
+      category: "Ply & Veneer",
+      image: "/marketing-images/VENEER04.JPG",
+    },
+    {
+      id: 29,
+      category: "Wood",
+      image: "/marketing-images/wooden-plywood-1000x1000.jpg",
+    },
+    {
+      id: 30,
+      category: "Wood",
+      image: "/marketing-images/WOOD.JPG",
+    },
+    
+    {
+      id: 31,
+      category: "Wood",
+      image: "/marketing-images/WOOD01.JPG",
+    }
   ];
 
   const videos = [
