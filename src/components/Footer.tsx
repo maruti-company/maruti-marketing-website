@@ -168,6 +168,12 @@ const Footer = () => {
               © {new Date().getFullYear()} Maruti Laminates. All rights reserved. | Crafted with
               excellence since 1986.
             </div>
+            <div className="text-sm text-primary-foreground/60 text-center md:text-right">
+              Developed by{" "}
+              <span className="text-accent font-medium hover:text-accent/80 transition-smooth">
+                Sunny Softwares
+              </span>
+            </div>
           </div>
         </div>
       </div>
