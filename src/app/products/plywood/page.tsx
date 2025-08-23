@@ -50,6 +50,11 @@ const PlywoodPage = () => {
       name: "BWP Flush Door",
       description: "Waterproof flush doors suitable for exterior and wet area applications",
       features: ["Waterproof", "Weather Resistant", "Exterior Grade", "Low Maintenance"]
+    },
+    {
+      name: "Fire Retardant Plywood",
+      description: "Specially treated plywood with fire-resistant properties for enhanced safety",
+      features: ["Fire Resistant", "Safety Certified", "Low Smoke Emission", "Structural Integrity"]
     }
   ];
 

@@ -19,7 +19,7 @@ const About = () => {
       icon: "🏆",
       title: "Industry Leader",
       description:
-        "35+ years of excellence and innovation in wood craftsmanship.",
+        "40+ years of excellence and innovation in wood craftsmanship.",
     },
     {
       icon: "❤️",
@@ -73,7 +73,7 @@ const About = () => {
             {/* Statistics */}
             <div className="grid grid-cols-2 gap-6 py-6">
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-gradient">35+</div>
+                <div className="text-3xl font-bold text-gradient">40+</div>
                 <div className="text-sm text-muted-foreground">
                   Years of Excellence
                 </div>

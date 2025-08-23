@@ -42,7 +42,12 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 max-w-7xl">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/maruti-logo.jfif"
+              alt="Maruti Laminates Logo"
+              className="h-10 w-auto object-contain"
+            />
             <h1 className="text-2xl font-serif font-bold text-gradient">
               Maruti Laminates
             </h1>

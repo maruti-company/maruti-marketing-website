@@ -52,7 +52,7 @@ const Footer = () => {
                 Maruti Laminates
               </h3>
               <p className="text-primary-foreground/80 leading-relaxed">
-                Crafting excellence in wood for over 35 years. Your trusted
+                Crafting excellence in wood for over 40 years. Your trusted
                 partner for premium plywood, laminates, and complete interior
                 solutions.
               </p>

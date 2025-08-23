@@ -47,7 +47,7 @@ const Hero = () => {
                   <span className="text-accent-foreground">🏆</span>
                 </div>
                 <div>
-                  <div className="font-semibold">35+ Years</div>
+                  <div className="font-semibold">40+ Years</div>
                   <div className="text-sm text-muted-foreground">
                     Experience
                   </div>

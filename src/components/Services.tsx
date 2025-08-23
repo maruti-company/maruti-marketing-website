@@ -48,7 +48,7 @@ const Services = () => {
   ];
 
   const benefits = [
-    "35+ Years Experience",
+    "40+ Years Experience",
     "ISI/ISO Certified Quality",
     "Pan-India Delivery",
     "Expert Installation",
