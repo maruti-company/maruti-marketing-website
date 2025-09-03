@@ -56,8 +56,8 @@ const About = () => {
                 <span className="text-gradient block">Premium Wood</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since 1986, Maruti Laminates has been at the forefront of
-                wood innovation, delivering exceptional plywood, laminates, and
+                Since 1986, Maruti Laminates has been at the forefront of wood
+                innovation, delivering exceptional plywood, laminates, and
                 interior solutions that transform spaces into extraordinary
                 experiences.
               </p>
@@ -86,7 +86,10 @@ const About = () => {
               </div>
             </div>
 
-            <Button className="bg-gradient-hero hover:opacity-90 transition-smooth shadow-elegant group" asChild>
+            <Button
+              className="bg-gradient-hero hover:opacity-90 transition-smooth shadow-elegant group"
+              asChild
+            >
               <Link href="/gallery">
                 Explore Gallery
                 <span className="ml-2 group-hover:translate-x-1 transition-smooth">

@@ -173,7 +173,10 @@ const Services = () => {
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {benefits.map((benefit) => (
-                <div key={benefit} className="flex items-center gap-3 justify-center">
+                <div
+                  key={benefit}
+                  className="flex items-center gap-3 justify-center"
+                >
                   <span className="text-accent flex-shrink-0">✓</span>
                   <span className="text-sm text-muted-foreground">
                     {benefit}

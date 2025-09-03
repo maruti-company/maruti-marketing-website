@@ -58,7 +58,7 @@ const Products = () => {
       ],
       gradient: "from-purple-500 to-pink-600",
       link: "/products/interior-solutions",
-    }
+    },
   ];
 
   return (

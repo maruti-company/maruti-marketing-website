@@ -26,12 +26,20 @@ const Footer = () => {
     { name: "Premium Plywood", href: "/products/plywood" },
     { name: "Luxury Laminates", href: "/products/laminates" },
     { name: "Hardware Solutions", href: "/products/hardware" },
-    { name: "Interior Solutions", href: "/products/interior-solutions" }
+    { name: "Interior Solutions", href: "/products/interior-solutions" },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "https://www.facebook.com/share/16tcRAfaw5/", name: "Facebook" },
-    { icon: Instagram, href: "https://www.instagram.com/marutilaminates/?igsh=MWx0MG04YXp4eXJ6Mw%3D%3D#", name: "Instagram" }
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/share/16tcRAfaw5/",
+      name: "Facebook",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/marutilaminates/?igsh=MWx0MG04YXp4eXJ6Mw%3D%3D#",
+      name: "Instagram",
+    },
   ];
 
   return (
@@ -63,14 +71,16 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                 <span className="text-sm">
-                  MARUTI LAMINATES PVT. LTD. <br/>
-                  Near serenity sky, Opp. kavisha panorama, <br/>
+                  MARUTI LAMINATES PVT. LTD. <br />
+                  Near serenity sky, Opp. kavisha panorama, <br />
                   South Bopal, Ghuma main road, Ahmedabad
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="text-sm">{process.env.NEXT_PUBLIC_PRIMARY_MOBILE_NO}</span>
+                <span className="text-sm">
+                  {process.env.NEXT_PUBLIC_PRIMARY_MOBILE_NO}
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
@@ -165,8 +175,8 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6 max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-primary-foreground/80 text-center md:text-left">
-              © {new Date().getFullYear()} Maruti Laminates. All rights reserved. | Crafted with
-              excellence since 1986.
+              © {new Date().getFullYear()} Maruti Laminates. All rights
+              reserved. | Crafted with excellence since 1986.
             </div>
             <div className="text-sm text-primary-foreground/60 text-center md:text-right">
               Developed by{" "}

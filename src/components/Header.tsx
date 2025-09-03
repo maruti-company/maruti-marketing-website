@@ -25,7 +25,9 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>{process.env.NEXT_PUBLIC_PRIMARY_MOBILE_NO || '+91 9737080808'}</span>
+              <span>
+                {process.env.NEXT_PUBLIC_PRIMARY_MOBILE_NO || "+91 9737080808"}
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
@@ -55,7 +57,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navigation.map((item) => (
+            {navigation.map((item) =>
               item.href.startsWith("/") && !item.href.includes("#") ? (
                 <Link
                   key={item.name}
@@ -75,9 +77,8 @@ const Header = () => {
                   <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-smooth origin-left"></span>
                 </a>
               )
-            ))}
+            )}
           </div>
-
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
@@ -86,7 +87,11 @@ const Header = () => {
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -95,7 +100,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pt-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navigation.map((item) => (
+              {navigation.map((item) =>
                 item.href.startsWith("/") && !item.href.includes("#") ? (
                   <Link
                     key={item.name}
@@ -115,7 +120,7 @@ const Header = () => {
                     {item.name}
                   </a>
                 )
-              ))}
+              )}
               <Link href="/quote">
                 <Button className="bg-gradient-hero hover:opacity-90 transition-smooth mt-4 w-fit">
                   Get Quote

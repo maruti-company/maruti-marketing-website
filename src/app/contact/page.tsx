@@ -12,35 +12,48 @@ import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     // Validate required fields
-    const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'subject', 'message'];
-    const missingFields = requiredFields.filter(field => !formData[field as keyof typeof formData].trim());
-    
+    const requiredFields = [
+      "firstName",
+      "lastName",
+      "email",
+      "phone",
+      "subject",
+      "message",
+    ];
+    const missingFields = requiredFields.filter(
+      (field) => !formData[field as keyof typeof formData].trim()
+    );
+
     if (missingFields.length > 0) {
-      alert('Please fill in all required fields.');
+      alert("Please fill in all required fields.");
       setIsLoading(false);
       return;
     }
@@ -52,7 +65,7 @@ const ContactPage = () => {
         phone: formData.phone,
         subject: formData.subject,
         message: formData.message,
-        to_name: 'Maruti Laminates',
+        to_name: "Maruti Laminates",
       };
 
       await emailjs.send(
@@ -62,18 +75,18 @@ const ContactPage = () => {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
 
-      setSubmitStatus('success');
+      setSubmitStatus("success");
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
       });
     } catch (error) {
-      console.error('EmailJS error:', error);
-      setSubmitStatus('error');
+      console.error("EmailJS error:", error);
+      setSubmitStatus("error");
     } finally {
       setIsLoading(false);
     }
@@ -125,18 +138,20 @@ const ContactPage = () => {
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Status Messages */}
-                  {submitStatus === 'success' && (
+                  {submitStatus === "success" && (
                     <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-green-800 text-sm">
-                        ✅ Message sent successfully! We'll get back to you within 24 hours.
+                        ✅ Message sent successfully! We'll get back to you
+                        within 24 hours.
                       </p>
                     </div>
                   )}
-                  
-                  {submitStatus === 'error' && (
+
+                  {submitStatus === "error" && (
                     <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
                       <p className="text-red-800 text-sm">
-                        ❌ Failed to send message. Please try again or contact us directly.
+                        ❌ Failed to send message. Please try again or contact
+                        us directly.
                       </p>
                     </div>
                   )}
@@ -223,7 +238,7 @@ const ContactPage = () => {
                     />
                   </div>
 
-                  <Button 
+                  <Button
                     type="submit"
                     disabled={isLoading}
                     className="w-full bg-gradient-hero hover:opacity-90 transition-smooth disabled:opacity-50"
@@ -319,13 +334,13 @@ const ContactPage = () => {
                 <div className="bg-gradient-card p-6 rounded-2xl border border-border/50">
                   <h3 className="font-semibold mb-4">Find Us on Map</h3>
                   <div className="rounded-xl overflow-hidden">
-                    <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3672.1424510520646!2d72.45142747531379!3d23.018541279176574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAxJzA2LjgiTiA3MsKwMjcnMTQuNCJF!5e0!3m2!1sen!2sin!4v1755428300715!5m2!1sen!2sin" 
-                      width="100%" 
-                      height="300" 
-                      style={{border: 0}} 
-                      allowFullScreen={true} 
-                      loading="lazy" 
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3672.1424510520646!2d72.45142747531379!3d23.018541279176574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAxJzA2LjgiTiA3MsKwMjcnMTQuNCJF!5e0!3m2!1sen!2sin!4v1755428300715!5m2!1sen!2sin"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      allowFullScreen={true}
+                      loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                       className="w-full"
                     />

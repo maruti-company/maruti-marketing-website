@@ -119,7 +119,9 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="bg-card/80 backdrop-blur-sm p-6 rounded-xl border border-border shadow-card hover-lift">
-                  <div className="text-3xl font-bold text-gradient">ISI/ISO</div>
+                  <div className="text-3xl font-bold text-gradient">
+                    ISI/ISO
+                  </div>
                   <div className="text-sm text-muted-foreground">
                     Certified Quality
                   </div>

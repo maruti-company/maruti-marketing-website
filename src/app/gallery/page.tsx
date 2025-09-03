@@ -92,13 +92,13 @@ const GalleryPage = () => {
       category: "Interior Products",
       image: "/marketing-images/INTE06.JPG",
     },
-    
+
     {
       id: 15,
       category: "Interior Products",
       image: "/marketing-images/INTE07.JPG",
     },
-    
+
     {
       id: 16,
       category: "Interior Products",
@@ -174,19 +174,19 @@ const GalleryPage = () => {
       category: "Wood",
       image: "/marketing-images/WOOD.JPG",
     },
-    
+
     {
       id: 31,
       category: "Wood",
       image: "/marketing-images/WOOD01.JPG",
-    }
+    },
   ];
 
   const videos = [
     {
       id: 1,
       src: "/marketing-images/01.mp4",
-    }
+    },
   ];
 
   const filteredProjects =
@@ -316,7 +316,10 @@ const GalleryPage = () => {
                       }`}
                     >
                       <img
-                        src={process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL + project.image}
+                        src={
+                          process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL +
+                          project.image
+                        }
                         alt={`${project.category} project`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
                       />
@@ -335,7 +338,9 @@ const GalleryPage = () => {
                   >
                     <div className="relative aspect-video">
                       <video
-                        src={process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL + video.src}
+                        src={
+                          process.env.NEXT_PUBLIC_S3_BUCKET_BASE_URL + video.src
+                        }
                         className="w-full h-full object-cover rounded-t-2xl"
                         autoPlay
                         muted
@@ -345,7 +350,7 @@ const GalleryPage = () => {
                         preload="metadata"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth pointer-events-none"></div>
-                      
+
                       {/* Download Button */}
                       <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
                         <a
@@ -354,17 +359,17 @@ const GalleryPage = () => {
                           className="bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-sm transition-smooth"
                           title="Download Video"
                         >
-                          <svg 
-                            className="w-5 h-5" 
-                            fill="none" 
-                            stroke="currentColor" 
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
-                            <path 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round" 
-                              strokeWidth={2} 
-                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                           </svg>
                         </a>
